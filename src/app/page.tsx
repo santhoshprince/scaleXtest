@@ -154,9 +154,9 @@ const App: React.FC = () => (
       <Col lg={24} md={24} sm={24} xs={24}>
         <h3 className="feanews">Featured In</h3>
         <div className='news-logo'>
-          <img src="./news2.png" alt="" width={100} className="responsive" />
-          <img src="./news1.png" alt="" width={100} className="responsive" />
-          <img src="./news3.png" alt="" width={100} className="responsive" />
+          <img src="./news2.png" alt="" width={100} className="news-res" />
+          <img src="./news1.png" alt="" width={100} className="news-res" />
+          <img src="./news3.png" alt="" width={100} className="news-res" />
         </div>
       </Col>
 
