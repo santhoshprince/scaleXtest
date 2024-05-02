@@ -21,7 +21,7 @@ const App: React.FC = () => (
             <img src="./Rajiv.png" alt="" className="responsive" />
           </div>
           <div style={{ textAlign: "center" }}>
-            <img src="./img1.png" className="responsive"></img>
+            <img src="./img1.png" className="responsive img-user"></img>
 
 
           </div>
@@ -95,7 +95,7 @@ const App: React.FC = () => (
 
         </div>
 
-        <div className="days-bg">
+        {/* <div className="days-bg">
           <div className="days-count">
             <h3>02</h3>
             <h5>Days</h5>
@@ -114,7 +114,35 @@ const App: React.FC = () => (
           </div>
 
 
-        </div>
+        </div> */}
+          <Row gutter={[12, 12]} justify={"center"}>
+          <Col lg={6} md={6} sm={6} xs={6}>
+            <div className="days-count-last days-new">
+              <h3>02</h3>
+              <h5>Days</h5>
+            </div>
+          </Col>
+          <Col lg={6} md={6} sm={6} xs={6}>
+            <div className="days-count-last days-new">
+              <h3>05</h3>
+              <h5>Hours</h5>
+            </div>
+          </Col>
+          <Col lg={6} md={6} sm={6} xs={6}>
+            <div className="days-count-last days-new">
+              <h3>09</h3>
+              <h5>MINUTES</h5>
+            </div>
+          </Col>
+          <Col lg={6} md={6} sm={6} xs={6}>
+            <div className="days-count-last days-new">
+              <h3>55</h3>
+              <h5>SECONDS</h5>
+            </div>
+          </Col>
+
+        </Row>
+
         <div style={{ textAlign: "center", paddingTop: "20px" }}>
           <h4 style={{ fontWeight: "400" }}>To Unlock Bonuses Worth    <span style={{ color: "#00ab00", fontWeight: 500 }}>₹6,487</span></h4>
         </div>
@@ -125,7 +153,7 @@ const App: React.FC = () => (
     <Row className="news-cont">
       <Col lg={24} md={24} sm={24} xs={24}>
         <h3 className="feanews">Featured In</h3>
-        <div style={{ display: "flex", justifyContent: "space-around" }}>
+        <div className='news-logo'>
           <img src="./news2.png" alt="" width={100} className="responsive" />
           <img src="./news1.png" alt="" width={100} className="responsive" />
           <img src="./news3.png" alt="" width={100} className="responsive" />
